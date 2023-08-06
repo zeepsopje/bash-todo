@@ -26,7 +26,7 @@ todo add My task
 
 ### Delete a task
 ```bash
-todo delete [index]
+todo done [index]
 ```
 
 ### Delete all tasks
