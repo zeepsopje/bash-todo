@@ -101,7 +101,7 @@ else
             ;;
         clear)
             clear_tasks
-            lgo "Cleared tasks"
+            log "Cleared tasks"
             ;;
         done)
             if [[ $# -lt 2 ]]; then
