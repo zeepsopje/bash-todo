@@ -10,11 +10,13 @@ SAVE_FILE="$CONFIG_PATH/todo"
 Tasks=()
 
 function log() {
-    echo "$0: $*"
+    name=$(basename "$0")
+    echo "$name: $*"
 }
 
 function log_n() {
-    echo -n "$0: $*"
+    name=$(basename "$0")
+    echo -n "$name: $*"
 }
 
 function get_saved_tasks() {
