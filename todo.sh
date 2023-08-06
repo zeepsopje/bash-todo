@@ -92,8 +92,7 @@ else
             ;;
         add)
             if [[ $# -lt 2 ]]; then
-                log_n "Name of new task: "
-                read name
+                read -p "Name of new task: " name
                 add_task "${name}"
             else
                 add_task "${@:2}"
