@@ -3,8 +3,8 @@ Simple todo application written in bash that I use for my personal projects.
 
 ## Installing
 ```
-git clone git@github.com:zeesopje/bash-todo.git
-cd bash-todo
+git clone git@github.com:zeesopje/bash-todo.git &&
+cd bash-todo &&
 sudo make install
 ```
 
