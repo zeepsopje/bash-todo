@@ -43,12 +43,12 @@ function fmt_task() {
 }
 
 function print_tasks() {
+    if [[ ${#Tasks[@]} -eq 1 ]]; then
+        log There is 1 task.
+    else
+        log There are ${#Tasks[@]} tasks.
+    fi
     if [[ ${#Tasks[@]} -ge 1 ]]; then
-        if [[ ${#Tasks[@]} -eq 1 ]]; then
-            log There is 1 task.
-        else
-            log There are ${#Tasks[@]} tasks.
-        fi
         for i in "${!Tasks[@]}"; do
             local task=$(fmt_task "${Tasks[i]}")
             echo "$i: ${task}"
